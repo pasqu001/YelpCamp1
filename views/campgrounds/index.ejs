@@ -1,4 +1,4 @@
-<%- include("partials/header") %>
+<%- include("../partials/header") %>
 
 <div class="container">
 
@@ -14,9 +14,9 @@
 
     <div class="row text-center" style="display:flex; flex-wrap:wrap;">
         <% campgrounds.forEach(function(camp){ %>
-            <div class="col-md-3 col-sm-6"> 
+            <div class="col-md-3 col-sm-6" > 
                 <div class="thumbnail">
-                    <img src="<%= camp.image %>" alt="Image of a camp">
+                    <img class='img-thumbnail' src="<%= camp.image %>" alt="Image of a camp">
                     <div class="caption">
                         <h4><%= camp.name %></h4>
                     </div>
@@ -28,4 +28,4 @@
         <% }); %>
     </div>    
 </div>
-<%- include("partials/footer") %>
+<%- include("../partials/footer") %>
