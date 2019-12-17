@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname + '/public'));
 app.set("view engine", "ejs");
 seedDB();
-
+//Testing 123
 // Campground.create({
 //     name: "TY Park", 
 //     image: "https://pixabay.com/get/50e9d4474856b108f5d084609620367d1c3ed9e04e50744e702c7add934fcc_340.jpg",
