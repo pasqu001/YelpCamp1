@@ -21,6 +21,7 @@ var indexRoutes = require("./routes/index");
 //mongoose.connect('mongodb://localhost:27017/yelp_camp', { useNewUrlParser: true });
 
 //PRODUCTION DATABASE - MONGODB CLOUD ATLAS
+mongoose.Promise = global.Promise
 mongoose.connect('mongodb+srv://HarryPotter:Hogwarts@cluster0-2hv3x.mongodb.net/test?retryWrites=true&w=majority', {
      useUnifiedTopology: true,
      useNewUrlParser: true,
