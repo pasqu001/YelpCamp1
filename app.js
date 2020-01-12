@@ -17,7 +17,19 @@ var campgroundRoutes = require("./routes/campgrounds");
 var indexRoutes = require("./routes/index");
 
 mongoose.set('useUnifiedTopology', true);
-mongoose.connect('mongodb://localhost:27017/yelp_camp', { useNewUrlParser: true });
+//LOCAL DATABASE
+//mongoose.connect('mongodb://localhost:27017/yelp_camp', { useNewUrlParser: true });
+
+//PRODUCTION DATABASE - MONGODB CLOUD ATLAS
+mongoose.connect('mongodb+srv://HarryPotter:Hogwarts@cluster0-2hv3x.mongodb.net/test?retryWrites=true&w=majority', {
+     useNewUrlParser: true,
+     useCreateIndex: true 
+    }).then(() =>{
+        console.log('Connected to DB!');
+    }).catch(err =>{
+        console.log('Error:', err.message);
+    });
+
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname + '/public'));
 app.use(methodOverride('_method'));
