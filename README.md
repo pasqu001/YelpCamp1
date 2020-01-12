@@ -1,5 +1,8 @@
 # YelpCamp1
-RESTful Express Application
+RESTful Express Application, for great places to camp!
+
+## Check out the Heroku site:
+https://young-scrubland-97815.herokuapp.com/
 
 ## Installation
 
@@ -29,5 +32,5 @@ YelpCamp1 uses a number of open source projects to work properly:
 
 
 ## Contributing
-If you have any ideas of things I could add please let me know. Still majorly working on the styling of the site.
+If you have any ideas of things I could add please let me know. Still majorly working on the styling of the site as well as other functionality. 
 
