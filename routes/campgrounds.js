@@ -7,7 +7,7 @@ var middleware = require("../middleware"); //bc file is named index.js we do not
 router.get("/", function(req, res){
     Campground.find({}, function(err, allCampgrounds){
         if(err){
-            console.log(err)
+            console.log("ERROR-ERROR",err.message)
         } else {
             res.render("campgrounds/index", { campgrounds:allCampgrounds, currentUser: req.user });
         }
